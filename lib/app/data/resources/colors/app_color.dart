@@ -1,7 +1,13 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
+
 class AppColor {
   static const Color kGreen = Color(0xff53B175);
+  static const Color kWhite = Colors.white;
+  static const Color kBlack = Color(0xff828282);
+  static const Color kBlue = Color(0xff5383EC);
+  static const Color kDarkBlue = Color(0xff4A66AC);
 }
 
 Map<int, Color> color = {

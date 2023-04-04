@@ -12,6 +12,7 @@ dependencies:
   shared_preferences: ^2.1.0
   flutter_native_splash: 2.2.19
   intl_phone_field: 3.1.0
+  font_awesome_flutter: 10.4.0
   flutter: 
     sdk: flutter
 
@@ -29,11 +30,7 @@ flutter:
     - family: Gilroy
       fonts: 
         - asset: assets/fonts/Gilroy-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/Gilroy-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Gilroy-Bold.ttf
-          weight: 700
+
   uses-material-design: true
 
 flutter_native_splash: 
