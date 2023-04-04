@@ -1,0 +1,44 @@
+name: online_groceries
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter_screenutil: ^5.7.0
+  shared_preferences: ^2.1.0
+  flutter_native_splash: 2.2.19
+  intl_phone_field: 3.1.0
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  lints: 2.0.1
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/images/onbording/
+    - assets/images/sign_in/
+  fonts: 
+    - family: Gilroy
+      fonts: 
+        - asset: assets/fonts/Gilroy-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Gilroy-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Gilroy-Bold.ttf
+          weight: 700
+  uses-material-design: true
+
+flutter_native_splash: 
+  color: '#53B175'
+  image: assets/images/splash/splash_icon.png
+  android: true
+  ios: true
+
