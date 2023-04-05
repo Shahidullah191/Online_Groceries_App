@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:online_groceries/app/data/resources/colors/app_color.dart';
 
+import '../../../data/resources/components/custom_elevated_button.dart';
 import '../controllers/onbording_controller.dart';
 
 class OnbordingView extends GetView<OnbordingController> {
@@ -15,7 +17,7 @@ class OnbordingView extends GetView<OnbordingController> {
             image: Image.asset(
               "assets/images/onbording/onbording_bg.png",
             ).image,
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
           ),
         ),
         child: Column(
@@ -47,18 +49,14 @@ class OnbordingView extends GetView<OnbordingController> {
             ),
             Padding(
               padding: EdgeInsets.only(top: 20, bottom: 50),
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(Get.width * 0.85, 50),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
+              child: CustomElevatedButton(
+                buttonColor: AppColor.kGreen,
+                text: "Get Started",
                 onPressed: () {
                   Get.toNamed("/sign-in");
                 },
-                child: Text("Get Started",
-                    style: TextStyle(fontSize: 18, color: Colors.white)),
+                buttonheight: 50,
+                buttonwidth: Get.width * 0.85,
               ),
             ),
           ],

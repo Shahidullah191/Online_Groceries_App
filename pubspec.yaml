@@ -13,6 +13,7 @@ dependencies:
   flutter_native_splash: 2.2.19
   intl_phone_field: 3.1.0
   font_awesome_flutter: 10.4.0
+  pinput: 2.2.31
   flutter: 
     sdk: flutter
 
@@ -26,11 +27,12 @@ flutter:
   assets: 
     - assets/images/onbording/
     - assets/images/sign_in/
+    - assets/images/select_location/
+
   fonts: 
     - family: Gilroy
       fonts: 
         - asset: assets/fonts/Gilroy-Regular.ttf
-
   uses-material-design: true
 
 flutter_native_splash: 
