@@ -14,6 +14,8 @@ dependencies:
   intl_phone_field: 3.1.0
   font_awesome_flutter: 10.4.0
   pinput: 2.2.31
+  dropdown_button2: ^2.0.0
+  carousel_slider: 4.2.1
   flutter: 
     sdk: flutter
 
@@ -28,7 +30,7 @@ flutter:
     - assets/images/onbording/
     - assets/images/sign_in/
     - assets/images/select_location/
-
+    - assets/images/home/
   fonts: 
     - family: Gilroy
       fonts: 

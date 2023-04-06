@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:online_groceries/app/modules/bottom navbar/bindings/bottom_navbar_binding.dart';
+import 'package:online_groceries/app/modules/bottom navbar/views/bottom_navbar_view.dart';
 import 'package:online_groceries/app/modules/home/bindings/home_binding.dart';
 import 'package:online_groceries/app/modules/home/views/home_view.dart';
 import 'package:online_groceries/app/modules/number_sign_in/bindings/number_sign_in_binding.dart';
@@ -50,6 +52,11 @@ class AppPages {
       name: _Paths.SELECT_LOCATION,
       page: () => SelectLocationView(),
       binding: SelectLocationBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOTTOM_NAVBAR,
+      page: () => BottomNavbarView(),
+      binding: BottomNavbarBinding(),
     ),
   ];
 }
