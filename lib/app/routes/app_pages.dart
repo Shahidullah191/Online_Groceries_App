@@ -1,9 +1,17 @@
 import 'package:get/get.dart';
 
+import 'package:online_groceries/app/modules/account/bindings/account_binding.dart';
+import 'package:online_groceries/app/modules/account/views/account_view.dart';
 import 'package:online_groceries/app/modules/bottom navbar/bindings/bottom_navbar_binding.dart';
 import 'package:online_groceries/app/modules/bottom navbar/views/bottom_navbar_view.dart';
+import 'package:online_groceries/app/modules/explore/bindings/explore_binding.dart';
+import 'package:online_groceries/app/modules/explore/views/explore_view.dart';
+import 'package:online_groceries/app/modules/favourite/bindings/favourite_binding.dart';
+import 'package:online_groceries/app/modules/favourite/views/favourite_view.dart';
 import 'package:online_groceries/app/modules/home/bindings/home_binding.dart';
 import 'package:online_groceries/app/modules/home/views/home_view.dart';
+import 'package:online_groceries/app/modules/my cart/bindings/my_cart_binding.dart';
+import 'package:online_groceries/app/modules/my cart/views/my_cart_view.dart';
 import 'package:online_groceries/app/modules/number_sign_in/bindings/number_sign_in_binding.dart';
 import 'package:online_groceries/app/modules/number_sign_in/views/number_sign_in_view.dart';
 import 'package:online_groceries/app/modules/onbording/bindings/onbording_binding.dart';
@@ -57,6 +65,26 @@ class AppPages {
       name: _Paths.BOTTOM_NAVBAR,
       page: () => BottomNavbarView(),
       binding: BottomNavbarBinding(),
+    ),
+    GetPage(
+      name: _Paths.EXPLORE,
+      page: () => ExploreView(),
+      binding: ExploreBinding(),
+    ),
+    GetPage(
+      name: _Paths.MY_CART,
+      page: () => MyCartView(),
+      binding: MyCartBinding(),
+    ),
+    GetPage(
+      name: _Paths.FAVOURITE,
+      page: () => FavouriteView(),
+      binding: FavouriteBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACCOUNT,
+      page: () => AccountView(),
+      binding: AccountBinding(),
     ),
   ];
 }
