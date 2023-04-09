@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../colors/app_color.dart';
+import '../../colors/app_color.dart';
 
 class CustomCard extends StatelessWidget {
   String productImage;
@@ -48,7 +48,7 @@ class CustomCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
-                      color: AppColor.kBlack,
+                      color: AppColor.kLightBlack,
                     ),
                   ),
                 ],

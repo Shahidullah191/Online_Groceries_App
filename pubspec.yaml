@@ -31,6 +31,11 @@ flutter:
     - assets/images/sign_in/
     - assets/images/select_location/
     - assets/images/home/
+    - assets/images/explore/
+    - assets/images/explore/beverages/
+    - assets/images/explore/eggs/
+
+
   fonts: 
     - family: Gilroy
       fonts: 

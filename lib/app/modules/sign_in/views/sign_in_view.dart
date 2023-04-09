@@ -61,7 +61,7 @@ class SignInView extends GetView<SignInController> {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: AppColor.kBlack,
+                        color: AppColor.kLightBlack,
                       ),
                     ),
                   ),
@@ -74,6 +74,7 @@ class SignInView extends GetView<SignInController> {
                       buttonColor: AppColor.kBlue,
                       buttonheight: 50,
                       buttonwidth: Get.width - 30,
+                      padding: 30,
                     ),
                   ),
                   CustomElevatedButton(
@@ -83,6 +84,7 @@ class SignInView extends GetView<SignInController> {
                     buttonColor: AppColor.kDarkBlue,
                     buttonheight: 50,
                     buttonwidth: Get.width - 30,
+                    padding: 30,
                   ),
                 ],
               ),

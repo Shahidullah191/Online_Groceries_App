@@ -2,9 +2,10 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:online_groceries/app/data/resources/components/home/custom_container_groceries.dart';
 
 import '../../../data/resources/colors/app_color.dart';
-import '../../../data/resources/components/custom_card_design.dart';
+import '../../../data/resources/components/home/custom_card_design.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -28,22 +29,22 @@ class HomeView extends GetView<HomeController> {
               children: [
                 Icon(
                   Icons.location_on,
-                  color: AppColor.kBlack,
+                  color: AppColor.kLightBlack,
                 ),
                 Text(
                   'Dhanmondi, Dhaka',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
-                    color: AppColor.kBlack,
+                    color: AppColor.kLightBlack,
                   ),
                 ),
               ],
             ),
           )),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(15),
+      body: Padding(
+        padding: EdgeInsets.all(15),
+        child: SingleChildScrollView(
           child: Column(
             children: [
               Container(
@@ -212,7 +213,7 @@ class HomeView extends GetView<HomeController> {
               SizedBox(
                 width: double.infinity,
                 child: Wrap(
-                  runSpacing: 6,
+                  runSpacing: 12,
                   alignment: WrapAlignment.spaceBetween,
                   children: [
                     CustomCard(
@@ -222,10 +223,10 @@ class HomeView extends GetView<HomeController> {
                       productQuantity: '7pcs price',
                     ),
                     CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
+                      productImage: 'assets/images/home/apple.png',
+                      productName: 'Red Apple',
                       productPrice: "200",
-                      productQuantity: '7pcs price',
+                      productQuantity: '1kg price',
                     ),
                   ],
                 ),
@@ -255,20 +256,20 @@ class HomeView extends GetView<HomeController> {
               SizedBox(
                 width: double.infinity,
                 child: Wrap(
-                  runSpacing: 6,
+                  runSpacing: 12,
                   alignment: WrapAlignment.spaceBetween,
                   children: [
                     CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
+                      productImage: 'assets/images/home/kapsikam.png',
+                      productName: 'Kapsikam',
                       productPrice: "150",
                       productQuantity: '7pcs price',
                     ),
                     CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
+                      productImage: 'assets/images/home/ada.png',
+                      productName: 'Ada',
                       productPrice: "200",
-                      productQuantity: '7pcs price',
+                      productQuantity: '1kg price',
                     ),
                   ],
                 ),
@@ -297,33 +298,41 @@ class HomeView extends GetView<HomeController> {
               SizedBox(height: 10),
               SizedBox(
                 width: double.infinity,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      CustomContainerGroceries(
+                          color: AppColor.kBrawon.withOpacity(0.2),
+                          image: "assets/images/home/pulses.png",
+                          title: "Pulses"),
+                      SizedBox(width: 10),
+                      CustomContainerGroceries(
+                          color: AppColor.kGreen.withOpacity(0.2),
+                          image: "assets/images/home/rice.png",
+                          title: "Rice"),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
+              SizedBox(
+                width: double.infinity,
                 child: Wrap(
-                  runSpacing: 6,
+                  runSpacing: 12,
                   alignment: WrapAlignment.spaceBetween,
                   children: [
                     CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
-                      productPrice: "150",
-                      productQuantity: '7pcs price',
+                      productImage: 'assets/images/home/beef.png',
+                      productName: 'Beef Bone',
+                      productPrice: "750",
+                      productQuantity: '1Kg price',
                     ),
                     CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
+                      productImage: 'assets/images/home/chicken.png',
+                      productName: 'Broiler Chicken',
                       productPrice: "200",
-                      productQuantity: '7pcs price',
-                    ),
-                    CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
-                      productPrice: "200",
-                      productQuantity: '7pcs price',
-                    ),
-                    CustomCard(
-                      productImage: 'assets/images/home/bananna.png',
-                      productName: 'Organic Banana',
-                      productPrice: "200",
-                      productQuantity: '7pcs price',
+                      productQuantity: '1Kg price',
                     ),
                   ],
                 ),

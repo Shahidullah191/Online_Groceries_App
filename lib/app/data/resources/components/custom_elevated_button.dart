@@ -9,6 +9,9 @@ class CustomElevatedButton extends StatelessWidget {
   IconData? icon;
   String text;
   Function onPressed;
+  double padding;
+  Color textColor;
+  Color iconColor;
   CustomElevatedButton({
     super.key,
     this.buttonwidth = 200,
@@ -17,6 +20,9 @@ class CustomElevatedButton extends StatelessWidget {
     this.icon,
     required this.text,
     required this.onPressed,
+    this.padding = 0,
+    this.textColor = AppColor.kWhite,
+    this.iconColor = AppColor.kWhite,
   });
 
   @override
@@ -35,18 +41,18 @@ class CustomElevatedButton extends StatelessWidget {
         child: Row(
           children: [
             icon != null
-                ? SizedBox(width: 30, child: Icon(icon, color: AppColor.kWhite))
+                ? SizedBox(width: 30, child: Icon(icon, color: iconColor))
                 : SizedBox(),
             Expanded(
               child: Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(right: 30),
+                  padding: EdgeInsets.only(right: padding),
                   child: Text(
                     text,
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      color: AppColor.kWhite,
+                      color: textColor,
                     ),
                   ),
                 ),
