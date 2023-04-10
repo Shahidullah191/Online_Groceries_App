@@ -15,6 +15,8 @@ abstract class Routes {
   static const MY_CART = _Paths.MY_CART;
   static const FAVOURITE = _Paths.FAVOURITE;
   static const ACCOUNT = _Paths.ACCOUNT;
+  static const LOGIN = _Paths.LOGIN;
+  static const SIGNUP = _Paths.SIGNUP;
 }
 
 abstract class _Paths {
@@ -29,4 +31,6 @@ abstract class _Paths {
   static const MY_CART = '/my-cart';
   static const FAVOURITE = '/favourite';
   static const ACCOUNT = '/account';
+  static const LOGIN = '/login';
+  static const SIGNUP = '/signup';
 }

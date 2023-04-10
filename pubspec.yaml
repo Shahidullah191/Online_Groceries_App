@@ -16,6 +16,7 @@ dependencies:
   pinput: 2.2.31
   dropdown_button2: ^2.0.0
   carousel_slider: 4.2.1
+  fluttertoast: 8.2.1
   flutter: 
     sdk: flutter
 
@@ -34,8 +35,6 @@ flutter:
     - assets/images/explore/
     - assets/images/explore/beverages/
     - assets/images/explore/eggs/
-
-
   fonts: 
     - family: Gilroy
       fonts: 
