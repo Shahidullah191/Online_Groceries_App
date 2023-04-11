@@ -195,7 +195,7 @@ class SelectLocationView extends GetView<SelectLocationController> {
               CustomElevatedButton(
                 text: "Submit",
                 onPressed: () {
-                  Get.toNamed("/bottom-navbar");
+                  Get.toNamed("/login");
                 },
                 buttonwidth: Get.width * 0.8,
               ),

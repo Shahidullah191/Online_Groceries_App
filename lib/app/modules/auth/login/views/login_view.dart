@@ -96,7 +96,9 @@ class LoginView extends GetView<LoginController> {
                       onPressed: () {}, child: Text('Forgot Password?'))),
               CustomElevatedButton(
                 text: "Log In",
-                onPressed: () {},
+                onPressed: () {
+                  Get.offAllNamed('/bottom-navbar');
+                },
                 buttonwidth: Get.width * 0.9,
               ),
               SizedBox(height: 20),

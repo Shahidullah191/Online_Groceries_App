@@ -8,8 +8,6 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.6.5
-  flutter_screenutil: ^5.7.0
-  shared_preferences: ^2.1.0
   flutter_native_splash: 2.2.19
   intl_phone_field: 3.1.0
   font_awesome_flutter: 10.4.0
@@ -17,11 +15,14 @@ dependencies:
   dropdown_button2: ^2.0.0
   carousel_slider: 4.2.1
   fluttertoast: 8.2.1
+  flutter_rating_bar: 4.0.1
+  flutter_launcher_icons: 0.13.0
   flutter: 
     sdk: flutter
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: 0.13.0
   lints: 2.0.1
   flutter_test: 
     sdk: flutter
@@ -45,5 +46,15 @@ flutter_native_splash:
   color: '#53B175'
   image: assets/images/splash/splash_icon.png
   android: true
+  ios: true
+
+flutter_icons: 
+  image_path: assets/images/splash/splash_icon.png
+  android: 
+    image_path: assets/images/splash/splash_icon.png
+    adaptive_icon_background: '#53B175'
+    adaptive_icon_foreground: assets/images/splash/splash_icon.png
+    generate: true
+    icon_size: 24
   ios: true
 
